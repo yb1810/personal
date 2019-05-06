@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/zhuce.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+</head>
+<body>
+<div class="big_box">
+	<div class="header_box">
+		<div class="header_one">
+			    <div class="header_two">
+					<a href="index.html"><img src="img/header_box.gif"></a>
+				</div>
+				<div class="header_three">
+					<a href="">注册小米账号</a>
+				</div>
+				<div class="header_from">
+					<div class="header_from_a">
+						<div class="header_from_s">
+							<p>国家/地区</p>
+						</div>
+					<div class="header_from_w">
+						<div class="header_from_d">
+							<p class="header_content">中国</p>
+							 <div class="content_s">
+							 	<a href="#" class="content_a">
+							 		<i class="iconfont icon-dayuhao-copy"></i>
+							 	</a>
+							 </div> 
+					    </div>
+					</div>
+					<div class="header_from_f">
+						<p>成功注册账号后，国家/地区将不能被修改</p>
+					</div>
+					<h4 class="tit_normal">手机号码</h4>
+					
+					<div class="iphone_a">
+						<div class="iphone_s">
+							<div class="iphone_d">+86</div>
+							<input class="iphone_f" type="text" placeholder="请输入手机号码" id="phone"/>
+							<!-- <span id="userSpan"></span> -->
+						</div>
+					</div>
+
+					<div class="iphone_a">
+						<div class="iphone_s">
+							<input class="iphone_o" type="password" placeholder="密码" id="userpass">
+						</div>
+					</div>
+
+					<div class="denglu_s">
+		  			<input class="btn_s" type="submit" value="立即注册" id="btnReg">
+
+    <div id="errorMessage" style="display: none;color:red"></div>
+		  			</div>
+				</div>
+					<div class="zhuce">
+						<div class="zhuce_f">
+						<a href="#" class="zhuce_a"><i class="iconfont icon-gouxuananniu"></i></a>
+		  				<p>注册账号即表示您同意并愿意遵守小米<span>用户协议</span>和<span>隐私政策</span></p>
+		  			    </div>
+		  			</div>
+			</div>
+		</div>
+	</div>
+		<footer>
+			<div class="footer_a">
+				<a href="#" class="footer_s">简体</a>
+				<span>|</span>
+				<a href="#">繁体</a>
+				<span>|</span>
+				<a href="#">English</a>
+				<span>|</span>
+				<a href="#">常见问题</a>
+				<span>|</span>
+				<a href="#">隐私政策</a>
+			</div>
+			<div class="footer_d">
+				<a>小米公司版权所有-京ICP备10046444-<img src="img/ghs.png">京公网安备11010802020134号-京ICP证110507号</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/zhuce.js ？p=2"></script>
+
+<!-- <script type="text/javascript">
+    window.onload = function () {
+        $("#txtUsername").onblur = function () {
+            //1 创建对象
+            let xhr = new XMLHttpRequest();
+
+            //设置请求参数
+
+            xhr.open("get", "check02.php?username=" + this.value, true);
+
+            //回调函数
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.responseText == "0") {
+                        $("#userSpan").innerHTML = "亲，该用户已被使用，请换一个";
+                    } else {
+                        $("#userSpan").innerHTML = "亲，恭喜您，该用户名可以使用";
+                    }
+                }
+            }
+            xhr.send();
+        }
+
+        $("#btnReg").onclick = function () {
+            let xhr = new XMLHttpRequest();
+            //设置请求参数
+            xhr.open("post", "regSave.php", true);
+
+            //回调函数
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.responseText == "1") {
+                        location.href = "denglu.html";
+                    } else {
+                        $("#errorMessage").style.display = "block";
+                        $("#errorMessage").innerHTML = "登录失败";
+                    }
+                }
+            }
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            let str =
+                `username=${$("#txtUsername").value}&userpass=${$("#userpass").value}`;
+            xhr.send(str);
+        }
+    }
+
+   
+
+    function $(str) {
+        if (str.charAt(0) == "#") {
+            return document.getElementById(str.substring(1));
+        } else if (str.charAt(0) == ".") {
+            return document.getElementsByClassName(str.substring(1));
+        } else {
+            return document.getElementsByTagName(str);
+        }
+    }
+</script> -->

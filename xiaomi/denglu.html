@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员登录</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+</head>
+<body>
+	<div class="head_box">
+		<div class="head_box_two">
+			<a href="index.html" target="_blank""><img src="img/logt.gif"></a>
+		</div>
+	</div>
+
+	<div class="gps_box">
+		<div id="gps_logins" class="gps_login">
+			<div class="gps_login_one" >
+				<a id="zhdl2" class="one_s" href="#">账号登录</a>
+				<span>|</span>
+				<a href="#" id="btn" class="one_a" href="">扫码登录</a>
+			</div>
+			<div class="id_box">
+				<div class="id_box_one">
+				<input class="accout" autocomplete="off" type="text" id="username"placeholder="邮箱/手机号码/小米ID">
+				</div>
+				<div class="id_box_one">
+				<input type="password" placeholder="&nbsp;&nbsp;&nbsp;密码" id="userpass">
+				</div>
+		  	</div>
+		  	<div class="id_denglu">
+		  		<div class="denglu_s">
+		  			<input class="btn_s" type="submit" value="登录" id="btnLogin">
+
+    			<div id="errorMessage" style="display: none;color:red"></div>
+		  		</div>
+		  		<div class="denglu_d">
+		  			<a class="denglu_d_s" href="">手机短信登录/注册</a>
+		  			<a class="denglu_d_f" href="zhuce.html"><span>立即注册</span> | <span>忘记密码?</span></a>
+		  		</div>
+		  	</div>
+		  	<div class="foot_box">
+		  		<div class="foot_box_one">	
+		  		</div>
+		  		<span>其他登录方式</span>
+		  		<div class="foot_box_one">
+		  		</div>
+		  	</div>
+		  		<div class="foot_box_there">
+		  			<a href="#" class="foot_j"><i class="iconfont icon-QQ"></i></a>
+		  			<a href="#" class="foot_t"><i class="iconfont icon-weibo"></i></a>
+		  			<a href="#" class="foot_y"><i class="iconfont icon-zhifubao"></i></a>
+		  			<a href="#" class="foot_u"><i class="iconfont icon-weixin"></i></a>
+		  		</div>
+	      </div>
+
+
+	      	<div id="gps_logos" class="gps_log" style="display: none" >
+				<div class="gps_login_one">
+					<a id="zhdl" class="one_s" href="">账号登录</a>
+					<span>|</span>
+					<a id="smdl2" class="one_a" href="">扫码登录</a>
+				</div>
+				<div class="gps_saoma">
+					<img src="img/saoma.png">
+				</div>
+				<div class="gps_ds">
+					<p>使用 <span>小米商城APP</span> 扫一扫</br>小米手机可打开[设置] > [小米账号] 扫码登录</p>
+
+				</div>
+	      </div>
+	</div>
+	
+
+
+		<footer>
+			<div class="footer_a">
+				<a href="#" class="footer_s">简体</a>
+				<span>|</span>
+				<a href="#">繁体</a>
+				<span>|</span>
+				<a href="#">English</a>
+				<span>|</span>
+				<a href="#">常见问题</a>
+				<span>|</span>
+				<a href="#">隐私政策</a>
+			</div>
+			<div class="footer_d">
+				<a>小米公司版权所有-京ICP备10046444-<img src="img/ghs.png">京公网安备11010802020134号-京ICP证110507号</a>
+			</div>
+		</footer>
+</body>
+</html>
+
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        $("#btnLogin").onclick = function () {
+            //创建对象
+            let xhr = new XMLHttpRequest();
+
+            xhr.open("post", "loginCheck03.php", true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    if (xhr.responseText == "1") {
+                        addCookie("username", $("#txtUsername").value);
+                        location.href = "index.html";
+                    } else {                            
+                        $("#errorMessage").style.display = "block";
+                        $("#errorMessage").innerHTML = "登录失败";
+                    }
+                }
+            }
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            let str = `username=${$("#txtUsername").value};userpass=${$("#userpass").value}`;
+            xhr.send(str);
+        }
+    }
+
+    function $(str) {
+        if (str.charAt(0) == "#") {
+            return document.getElementById(str.substring(1));
+        } else if (str.charAt(0) == ".") {
+            return document.getElementsByClassName(str.substring(1));
+        } else {
+            return document.getElementsByTagName(str);
+        }
+    }
+</script>
+
+<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="hengxian" unicode="&#58884;" d="M0.021487 364.151066l1023.957021 0 0-127.921461L0.021487 236.229604 0.021487 364.151066z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="shuxian" unicode="&#59470;" d="M400 832h224v-896H400V832z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="hengxian1" unicode="&#58967;" d="M1524.57178458 591.42821523h2489.13858274v-414.85643046H1524.57178458z"  horiz-adv-x="6144" />
+
+    
+    <glyph glyph-name="hengxian2" unicode="&#59210;" d="M126.976 479.232h762.88v-190.464h-762.88z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="shuxian1" unicode="&#58988;" d="M575.817468 830.709995H448.169229v-893.418966h127.661542z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

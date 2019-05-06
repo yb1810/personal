@@ -1,0 +1,237 @@
+@charset "utf-8";
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+.head_box{
+	width: 100%;
+	height: 98px;
+}
+.head_box .head_box_two img{
+	margin-left: 373px;
+	padding-top: 22px;
+}
+.gps_box{
+	width: 100%;
+	height: 587px;
+	background: url(../img/93669e3fa2baa668227d699f69788fd6.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.gps_box .gps_login{
+	width: 410px;
+	height: 525px;
+	background: white;
+	float: right;
+	position: absolute;
+	left: 1108px;
+	top: 23px;				
+}
+.gps_box .gps_log{
+	width: 410px;
+	height: 525px;
+	background: white;
+	float: right;/*
+	margin-right: 385px;
+	margin-top: 32px;	*/	
+	position: absolute;
+	left: 1108px;
+	top: 23px;	
+	/*display: none;*/
+}
+.gps_log .gps_login_one .one_s{
+	font-size: 25px;
+	color: #f5743f;
+	line-height: 92px;
+	margin-left: 67px;
+
+}
+.gps_log .gps_login_one .one_a{
+	font-size: 25px;
+	color: #666666;
+	line-height: 92px;
+	margin-right: 67px;
+}
+.gps_log .gps_login_one span{
+	color: #e0e0e0;
+	margin: 0 30px 0 30px;
+}
+.gps_login .gps_login_one{
+	width: 410px;
+	height: 92px;
+/*	background: pink;*/
+}
+.gps_login .gps_login_one .one_s{
+	font-size: 25px;
+	color: #f5743f;
+	line-height: 92px;
+	margin-left: 67px;
+
+}
+.gps_login .gps_login_one .one_a{
+	font-size: 25px;
+	color: #666666;
+	line-height: 92px;
+	margin-right: 67px;
+}
+.gps_login .gps_login_one span{
+	color: #e0e0e0;
+	margin: 0 30px 0 30px;
+}
+/*.gps_login .gps_login_one:hover .one_a{
+	color: #f5743f;
+}*/
+.gps_saoma img{
+	margin-left: 110px;
+	margin-top: 60px;
+}
+.gps_ds{
+	text-align: center;
+	margin-top: 20px;
+}
+.gps_ds p{
+	font-size: 15px;
+	color: #666666;
+}
+.gps_ds p span{
+	color: #f5743f;
+}
+.id_box{
+	width: 348px;
+	height: 124px;
+	margin-left: 30px;
+}
+.id_box .id_box_one input{
+	width: 320px;
+	height: 35px;
+	line-height: 48px;
+	margin-bottom: 15px;
+	padding:5px 10px;
+}
+.id_denglu{
+	width: 348px;
+	height: 75px;
+	margin: 15px 30px;
+}
+.id_denglu .denglu_s input{
+	width: 348px;
+	height: 50px;
+}
+.btn_s{
+	width: 100%;
+	height: 50px;
+	background-color: #ef5b00;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #ef5b00;
+}
+.denglu_d{
+	width: 100%;
+	height: 25px;
+	padding-top: 8px;
+}
+.denglu_d .denglu_d_s{
+	color: #ef5b00;
+	font-size: 13px;
+}
+.denglu_d .denglu_d_f{
+	color: #999999;
+	font-size: 13px;
+	padding-left: 103px;
+}
+span:hover{
+	color: #ef5b00;
+}
+
+.foot_box{
+	width: 348px;
+	height: 20px;
+	margin: 15px 30px;
+	margin-top: 127px;
+	display: flex;
+	justify-content: space-between;
+}
+.foot_box_one{
+	width: 130px;
+	height: 20px;
+	margin-top: 10px;
+	border-top: 1px solid #999999;
+}
+.foot_box span{
+	text-align: center;
+	height: 20px;
+	font-size: 13px;
+	color: #999999;
+}
+.foot_box_there{
+	width: 348px;
+	height: 35px;
+	margin: 0 30px;	
+	text-align: center;
+	word-spacing: 20px;
+}
+.foot_j i{
+	color: #0288d1;
+	font-size: 30px;
+}
+.foot_t i{
+	color: #d32f2f;
+	font-size: 30px;
+}
+.foot_y i{
+	color: #0288d1;
+	font-size: 30px;
+}
+.foot_u i{
+	color: #00d20d;
+	font-size: 30px;
+}
+
+footer{
+	width: 100%;
+	height: 80px;
+	background:#fff;
+	padding: 60px 0;
+}
+
+footer .footer_a{
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 13px;
+	cursor: pointer;
+	word-spacing: 10px;
+}
+footer .footer_a a{
+	color: #757575;
+}
+footer .footer_a .footer_s{
+	color: #333333;
+}
+footer .footer_a a:hover{
+	color: #333333;
+}
+footer .footer_d{
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 13px;
+	cursor: pointer;
+	padding-top: 10px;
+}
+footer .footer_d a{
+	color: #757575;
+}
